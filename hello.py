@@ -3,8 +3,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template("index.html")
+    name = "flask"
+    return render_template("index.html",name_value = name)
 
 @app.route("/about")
 def about():
-    return "This is paiza"
+    return render_template("index.html")

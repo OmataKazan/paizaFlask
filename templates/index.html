@@ -8,7 +8,10 @@
     </style>
   </head>
   <body>
-      <h1>HelloPython</h1>
+    {%if name_value%}
+      <h1>Hello{{name_value}}</h1>
+      {%else%}
       <p>helloPiza</p>
+      {%endif%}
   </body>
 </html>
