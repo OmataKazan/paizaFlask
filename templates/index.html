@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
@@ -10,6 +11,16 @@
   </head>
   <body>
       <h1>HelloPython</h1>
+=======
+{%extends "layout.html"%}
+{%block content%}
+    {%if name_value%}
+      <h1>Hello{{name_value}}</h1>
+      {%else%}
+>>>>>>> practice
       <p>helloPiza</p>
-  </body>
-</html>
+      {%endif%}
+    {%for player in players:%}
+      <p>{{player + "はモンスターと戦った"}}</p>
+    {%endfor%}
+{%endblock%}
