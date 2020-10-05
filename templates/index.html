@@ -13,5 +13,9 @@
       {%else%}
       <p>helloPiza</p>
       {%endif%}
+    {%for player in players:%}
+      <p>{{player + "はモンスターと戦った"}}</p>
+    {%endfor%}
+
   </body>
 </html>
